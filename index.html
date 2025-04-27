@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+    <!-- Recommended -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 backdrop-blur-xl">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Left - Two icons with rounded borders -->
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="p-4 border rounded-full hover:bg-gray-100 transition"
+            >
+              <!-- First icon -->
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="p-4 border rounded-full hover:bg-gray-100 transition"
+            >
+              <!-- Second icon -->
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Middle - Navigation Links -->
+          <nav class="hidden md:flex space-x-10 text-md Gilroy">
+            <a href="#home" class="hover:text-black transition">Home</a>
+            <a href="#about" class="hover:text-black transition">About</a>
+            <a href="#projects" class="hover:text-black transition">Projects</a>
+            <a href="#services" class="hover:text-black transition">Services</a>
+          </nav>
+
+          <!-- Right - Contact Us button -->
+          <div>
+            <a
+              href="#contact"
+              class="py-4 magnet  px-6 rounded-full border text-black transition"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <!-- Mobile Menu Icon (Remix Icon) -->
+              <i class="ri-menu-3-line text-3xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden absolute top-20 left-0 w-full bg-white shadow-lg hidden"
+      >
+        <div class="flex flex-col items-center space-y-4 py-6">
+          <a href="#home" class="text-lg hover:text-black transition">Home</a>
+          <a href="#about" class="text-lg hover:text-black transition">About</a>
+          <a href="#projects" class="text-lg hover:text-black transition"
+            >Projects</a
+          >
+          <a href="#services" class="text-lg hover:text-black transition"
+            >Services</a
+          >
+          <a href="#contact" class="text-lg hover:text-black transition"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen flex items-center justify-center md:p-20 text-center"
+      id="home"
+    >
+      <div class="">
+        <div class="border rounded-full p-5 inline-block mb-3 mt-5">
+          <img src="./logo.webp" alt="Logo" class="max-h-32" />
+        </div>
+        <h2
+          class="satisfy-regular text-5xl md:text-9xl max-w-5xl text-[#51483f]"
+        >
+        <span class="website satisfy-regular ">Shaping</span>
+        <span class="website satisfy-regular ">Design</span>
+        <span class="website satisfy-regular ">&Visions</span>
+        </span>
+        </h2>
+        <p class="mt-4 text-lg text-[#51483f]">
+          Frontend Developer | MERN Stack Enthusiast
+        </p>
+        <div class="mt-8">
+          <a
+            href="#contact"
+            class="py-5 px-6 rounded-full border text-black transition"
+          >
+            Schedule a Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="relative w-full h-screen overflow-hidden">
+      <!-- Video background -->
+      <video
+        src="https://player.vimeo.com/progressive_redirect/playback/1020697798/rendition/720p/file.mp4?loc=external&log_user=0&signature=cd45f23683db91c40f08a3f4a31ba153f1e93eac3d4f98cb3ca4b651b8830d04"
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover"
+      ></video>
+
+      <!-- <div
+        class="hover:bg-opacity-10 absolute top-0 left-0 w-full h-full bg-black bg-opacity-30"
+      ></div>  -->
+
+      <!-- Centered box container -->
+      <div class="relative flex items-center justify-center md:w-full h-full">
+        <div
+          class="bg-white bg-opacity-80 p-8 md:p-16 rounded-lg shadow-md max-w-xl text-center"
+        >
+          <h2
+            class="satisfy-regular text-3xl md:text-4xl font-bold mb-4 text-colour"
+          >
+            Crafting Exceptional Web Experiences
+          </h2>
+          <p class="text-lg mb-6">
+            Designing and Developing Seamless, Innovative, and User-Centric
+            Websites for the Digital World
+          </p>
+          <a
+            href="#contact"
+            class="py-3 px-6 rounded-full border border-black text-black hover:bg-black hover:text-white transition"
+          >
+            Discover More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- //why us section -->
+
+    <section class="" id="why-us">
+      <div class="container mx-auto pt-32">
+        <div class="flex flex-col md:flex-row gap-20">
+          <div class="md:w-2/3 flex flex-col md:sticky top-32 h-max p-10">
+            <h3
+              class="satisfy-regular text-lg font-semibold text-gray-600 mb-3"
+            >
+              Why Choose Us
+            </h3>
+            <h2
+              class="satisfy-regular text-4xl md:text-7xl font-['Matter'] mb-8 text-[#51483f]"
+            >
+              What makes our services stand out
+            </h2>
+            <a
+              href="#contact"
+              class="py-3 px-6 w-max rounded-full border border-black text-black hover:bg-black hover:text-white transition"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <div class="md:w-1/2 space-y-8 service-items">
+            <div
+              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+            >
+              <h4 class="text-2xl font-bold mb-4">Creative Design</h4>
+              <p class="text-gray-600 text-lg">
+                We create unique designs that capture your brand's essence and
+                appeal to your target audience.
+              </p>
+            </div>
+
+            <div
+              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+            >
+              <h4 class="text-2xl font-bold mb-4">User Experience</h4>
+              <p class="text-gray-600 text-lg">
+                We prioritize intuitive interfaces and seamless interactions to
+                enhance user satisfaction.
+              </p>
+            </div>
+
+            <div
+              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+            >
+              <h4 class="text-2xl font-bold mb-4">Performance</h4>
+              <p class="text-gray-600 text-lg">
+                Our solutions are optimized for speed and efficiency, ensuring
+                excellent performance on all devices.
+              </p>
+            </div>
+
+            <div
+              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+            >
+              <h4 class="text-2xl font-bold mb-4">Responsive Design</h4>
+              <p class="text-gray-600 text-lg">
+                We build websites that look and function perfectly across all
+                screen sizes and devices.
+              </p>
+            </div>
+
+            <div
+              class="p-12 hover:bg-gray-50 transition-colors rounded-lg service-item"
+            >
+              <h4 class="text-2xl font-bold mb-4">Support & Maintenance</h4>
+              <p class="text-gray-600 text-lg">
+                We provide ongoing support and maintenance to keep your digital
+                presence running smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="max-w-8xl font-['Roboto'] flex justify-center items-center p-20"
+    >
+      <h1
+        class="text-[8rem] satisfy-regular text-center leading-none"
+        style="-webkit-text-stroke: 2px #51483f; color: transparent"
+      >
+        See Your <br />
+        Design Dreams <br />
+        Come To Life
+      </h1>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="py-10 overflow-hidden">
+      <div class="marquee-container relative">
+        <div class="marquee flex items-center space-x-32 animate-marquee">
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">GitHub</span>
+          </a>
+
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">Behance</span>
+          </a>
+
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">Instagram</span>
+          </a>
+
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">LinkedIn</span>
+          </a>
+
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">Dribbble</span>
+          </a>
+
+          <a
+            href="#"
+            class="text-[#51483f] hover:text-black transition-colors flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              />
+            </svg>
+            <span class="ml-2 text-xl">Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- how i work-->
+
+    <section
+      class="max-w-8xl text-colour font-['matter'] flex justify-center pt-20 pb-20"
+    >
+      <div class="flex flex-col w-full">
+        <h1 class="text-4xl text-center leading-none text-white">How I Work</h1>
+        <h1 class="text-6xl md:text-8xl font-light text-center leading-none satisfy-regular">3 Simple Steps</h1>
+
+        <div class="text-center mt-20 space-y-16">
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center text-3xl font-bold text-colour"
+            >
+              1
+            </div>
+            <!-- Vertical line -->
+            <div class="h-16 w-0.5 bg-black my-2"></div>
+            <h3 class="text-2xl font-semibold text-colour">
+              Discovery Call
+            </h3>
+            <p class="text-lg text-colour mt-2 max-w-md">
+              We discuss your vision, requirements, and project scope
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center text-3xl font-bold text-colour"
+            >
+              2
+            </div>
+            <!-- Vertical line -->
+            <div class="h-16 w-0.5 bg-black my-2"></div>
+            <h3 class="text-2xl font-semibold text-colour">
+              Design & Development
+            </h3>
+            <p class="text-lg text-colour mt-2 max-w-md">
+              I create prototypes and build your project with regular updates
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center text-3xl font-bold text-colour"
+            >
+              3
+            </div>
+            <!-- Vertical line -->
+            <div class="h-16 w-0.5 bg-black my-2"></div>
+            <h3 class="text-2xl font-semibold text-colour">
+              Launch & Support
+            </h3>
+            <p class="text-lg text-colour mt-2 max-w-md">
+              We finalize, deploy and provide ongoing maintenance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feedback section-->
+
+    <section class="py-20  font-['Matter']" id="feedback">
+      <div class="container mx-auto px-10 md:px-20">
+        <h2 class="text-4xl md:text-6xl text-center mb-16 text-[#51483f] satisfy-regular">Client Feedback</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="bg-white p-12 rounded-lg shadow-xl">
+            <div class="flex mb-6 text-yellow-500">
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+              "The team was incredibly professional and delivered on time. I
+              couldn't be happier with the results!"
+            </p>
+            <div class="flex items-center">
+              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                <i class="ri-user-line text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-lg">John Doe</p>
+                <p class="text-gray-500">CEO, Company Name</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-12 rounded-lg shadow-xl">
+            <div class="flex mb-6 text-yellow-500">
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-half-fill text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+              "Their attention to detail and creativity made all the difference.
+              Highly recommend their services!"
+            </p>
+            <div class="flex items-center">
+              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                <i class="ri-user-line text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-lg">Jane Smith</p>
+                <p class="text-gray-500">Marketing Director, Company Name</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-12 rounded-lg shadow-xl">
+            <div class="flex mb-6 text-yellow-500">
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+              <i class="ri-star-fill text-2xl"></i>
+            </div>
+            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+              "A fantastic experience from start to finish. The team really
+              understood our needs and delivered beyond expectations."
+            </p>
+            <div class="flex items-center">
+              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
+                <i class="ri-user-line text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-lg">Alice Johnson</p>
+                <p class="text-gray-500">Product Manager, Company Name</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="bg-white p-12 rounded-lg shadow-xl">
+            <div class="flex mb-6 text-yellow-500">
+        </div>
+      </div>
+    </section>
+
+    <!--Project section-->
+
+    <section class="py-20 " id="projects">
+      <div class="container mx-auto px-10 md:px-20">
+        <!-- Section heading -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-6xl font-['Matter'] mb-4 text-[#51483f] satisfy-regular">Project Overview</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Showcasing some of my recent work and creative solutions</p>
+        </div>
+  
+        <!-- Project items -->
+        <div class="space-y-32">
+          <!-- Project 1 - Text left, image right -->
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+              <h3 class="text-3xl font-bold">E-commerce Platform</h3>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                A fully responsive e-commerce solution built with React and Node.js. Features include user authentication, 
+                product filtering, cart functionality, and payment processing integration.
+              </p>
+              <div class="flex items-center space-x-6 pt-4">
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-eye-line text-xl mr-2"></i>
+                  <span>View Live</span>
+                </a>
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-github-fill text-xl mr-2"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+              <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img src="https://placehold.co/600x400" alt="E-commerce Project" class="w-full h-auto transform hover:scale-105 transition-transform">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Project 2 - Image left, text right -->
+          <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="md:w-1/2 mt-10 md:mt-0">
+              <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img src="https://placehold.co/600x400" alt="Portfolio Website" class="w-full h-auto transform hover:scale-105 transition-transform">
+              </div>
+            </div>
+            <div class="md:w-1/2 space-y-6">
+              <h3 class="text-3xl font-bold">Portfolio Website</h3>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                A modern portfolio website with smooth animations and interactive elements. 
+                Built with HTML, CSS, and JavaScript, featuring a responsive design optimized for all devices.
+              </p>
+              <div class="flex items-center space-x-6 pt-4">
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-eye-line text-xl mr-2"></i>
+                  <span>View Live</span>
+                </a>
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-github-fill text-xl mr-2"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Project 3 - Text left, image right -->
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+              <h3 class="text-3xl font-bold">Task Management App</h3>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                A full-stack task management application with user accounts, task categories, priorities, 
+                and deadline notifications. Built with the MERN stack and featuring real-time updates.
+              </p>
+              <div class="flex items-center space-x-6 pt-4">
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-eye-line text-xl mr-2"></i>
+                  <span>View Live</span>
+                </a>
+                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <i class="ri-github-fill text-xl mr-2"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+              <div class="rounded-xl overflow-hidden shadow-2xl">
+                <img src="https://placehold.co/600x400" alt="Task Management App" class="w-full h-auto transform hover:scale-105 transition-transform">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="p-16 font-[''] flex justify-center items-center">
+      <div class="max-w-6xl mx-auto text-center px-4">
+        <h1 class="text-3xl md:text-7xl  font-bold mb-6 text-[#51483f] satisfy-regular">Allow
+          Yourself
+          To <br>
+          See  
+          Your
+          Design
+          
+          Dreams  <br>
+  
+          Come
+          Alive</h1>
+        <p class="text-xl md:text-2xl mb-12 text-[#51483f] max-w-2xl mx-auto">Transform your ideas into stunning digital experiences that captivate and convert</p>
+        <a href="#contact"  class="py-4 px-6 rounded-full border text-black transition">
+          Begin Your Journey
+        </a>
+      </div>
+    </section>
+
+
+    <!-- faq Section -->
+    <section class="py-20  font-['Matter']" id="faq">
+      <div class="max-w-8xl container mx-auto px-10 md:px-20">
+        <!-- Two-line heading -->
+        <h2 class="text-4xl md:text-6xl mb-16 text-[#51483f] satisfy-regular text-center">
+          Frequently Asked <br />
+          Questions
+        </h2>
+        
+        <!-- FAQ Items -->
+        <div class="space-y-6 mt-12">
+          
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
+              <h3 class="text-2xl font-semibold">How does pricing work?</h3>
+              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
+          <i class="ri-add-line text-2xl"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-white p-6 rounded-lg hidden">
+              <p class="text-lg text-gray-700">We offer custom pricing based on project scope and requirements. Contact us for a personalized quote tailored to your specific needs.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
+              <h3 class="text-2xl font-semibold">What services you offer?</h3>
+              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
+          <i class="ri-add-line text-2xl"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+              <p class="text-lg text-gray-700">We provide web design, development, UI/UX design, branding, and digital marketing services to help businesses establish a strong online presence.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
+              <h3 class="text-2xl font-semibold">How long projects take?</h3>
+              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
+          <i class="ri-add-line text-2xl"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+              <p class="text-lg text-gray-700">Project timelines vary based on complexity and scope. Simple projects may take 2-4 weeks, while more complex ones can take 2-3 months to complete.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
+              <h3 class="text-2xl font-semibold">Do you offer revisions?</h3>
+              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
+          <i class="ri-add-line text-2xl"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+              <p class="text-lg text-gray-700">Yes, our packages include revision rounds to ensure you're completely satisfied with the final product. Specific details are outlined in your project contract.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
+              <h3 class="text-2xl font-semibold">What technologies you use?</h3>
+              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
+          <i class="ri-add-line text-2xl"></i>
+              </div>
+            </div>
+            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+              <p class="text-lg text-gray-700">We work with modern technologies including React, Node.js, WordPress, Shopify, and various design tools to deliver cutting-edge digital solutions.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+     
+    </section>
+
+    <!--footer-->
+
+    <footer class="bg-[#cec3b8] py-20">
+      <div class="max-w-8xl mx-auto px-6 md:px-10">
+        <h1 class="text-5xl md:text-8xl font-semibold text-[#51483f] leading-tight footer">Building a <br> Greener future</h1>
+  
+        <div class="flex flex-col md:flex-row justify-between items-start mt-20 gap-12">
+          <!-- Logo section -->
+          <div class="mb-8 md:mb-0">
+            <div class="border border-[#51483f] rounded-full p-4 bg-white bg-opacity-10 shadow-lg hover:shadow-xl transition-all">
+              <img src="./logo.webp" alt="Logo" class="max-h-28" />
+            </div>
+          </div>
+  
+          <!-- First link column -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2">Navigation</h3>
+            <a href="#home" class="text-md block font-medium hover:text-black transition">Home</a>
+            <a href="#about" class="text-md block font-medium hover:text-black transition">About</a>
+            <a href="#projects" class="text-md block font-medium hover:text-black transition">Projects</a>
+            <a href="#services" class="text-md block font-medium hover:text-black transition">Services</a>
+            <a href="#contact" class="text-md block font-medium hover:text-black transition">Contact</a>
+          </div>
+  
+          <!-- Second link column -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2">Connect</h3>
+            <a href="#" class="text-md block font-medium hover:text-black transition">LinkedIn</a>
+            <a href="#" class="text-md block font-medium hover:text-black transition">Twitter</a>
+            <a href="#" class="text-md block font-medium hover:text-black transition">Instagram</a>
+            <a href="#" class="text-md block font-medium hover:text-black transition">GitHub</a>
+            <a href="#" class="text-md block font-medium hover:text-black transition">Dribbble</a>
+          </div>
+  
+          <!-- Newsletter section -->
+          <div class="md:col-span-2 lg:col-span-3 mt-10 md:mt-0">
+            <div class="bg-white bg-opacity-20 rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
+              <h5 class="text-lg font-semibold text-[#51483f] mb-4">Stay Updated</h5>
+              <p class="text-sm text-[#51483f] mb-4">Join our newsletter for the latest trends and insights</p>
+              <div class="relative">
+                <input 
+                  type="email" 
+                  class="bg-white bg-opacity-70 text-gray-800 selection-none py-3 px-5 w-full focus:outline-none  focus:ring-[#51483f] transition-all" 
+                  placeholder="Your email address">
+                <button 
+                  class="absolute right-1 top-1/2 transform rounded-full -translate-y-1/2 bg-[#51483f] hover:bg-black text-white p-2 transition-all focus:outline-none">
+                  <i class="ri-arrow-right-line text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer bottom -->
+        <div class="mt-16 pt-6 border-t border-[#a99e92] flex flex-col md:flex-row items-center justify-between text-sm text-[#51483f]">
+          <p>&copy; 2024 Creative Portfolio</p>
+          <p class="mt-2 md:mt-0">Terms and Conditions | Privacy Policy</p>
+          <p class="mt-2 md:mt-0">Designed & Developed with ❤️</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+*{
+    font-family: "Gilroy", sans-serif;
+}
+.text-colour{
+    color: #51483f;
+}
+.satisfy-regular {
+    font-family: "Satisfy-regular";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.Gilroy {
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-style: normal;
+  }
+::-webkit-scrollbar{
+    width: 5px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #464545;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+::-webkit-scrollbar-track{
+    background: #cec3b8;
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .animate-marquee {
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
