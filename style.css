@@ -2,6 +2,23 @@
 *{
     font-family: "Gilroy", sans-serif;
 }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./Gilroy-Light.ttf');
+}
+.cursor{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #040006;
+  z-index: 8;
+  transition: background-image ease 0.5s;
+  background-position: center;
+  background-size:cover ;
+  mix-blend-mode: difference;
+}
 .text-colour{
     color: #51483f;
 }
@@ -49,3 +66,7 @@
       transform: translateX(-100%);
     }
   }
+
+
+  
+  
