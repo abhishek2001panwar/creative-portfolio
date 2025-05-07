@@ -104,10 +104,20 @@ tl.to('.home .website1' ,{
 tl.to('.video-wrapper',{
   width : "100%",
   height : "100%",
-
-
   duration : 3,
 } ,"b");
+
+// tl.to(".feedback .feedback-card", {
+//   transform: "TranslateX(-325%)",
+//   xPercent: -200,
+//   duration: .1,
+//   scrollTrigger: {
+//     trigger: ".feedback",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: 1,
+//   },
+// } , "b");
 
 var boxes = document.querySelectorAll("#image")
 boxes.forEach(function(ele){
@@ -135,6 +145,10 @@ boxes.forEach(function(ele){
     })
 })
 
+
+
+
+
 // var makeMagnet = document.querySelectorAll(".magnet")
 
 // makeMagnet.forEach(function(ele){
@@ -147,5 +161,52 @@ boxes.forEach(function(ele){
 //     crsr.style.transition = "all 0.5s"
 //   })
 // })
+// gsap.registerPlugin(ScrollTrigger);
+
+// const cards = gsap.utils.toArray(".feedback-card");
+
+// cards.forEach((card, i) => {
+//   gsap.to(card, {
+//     scrollTrigger: {
+//       trigger: "#feedback",
+//       start: `top+=${i * 150} center`,
+//       end: "+=200",
+//       scrub: true,
+//     },
+//     y: (i + 1) * 60,
+//     scale: 0.95,
+//     zIndex: cards.length - i,
+//     ease: "power2.out",
+//   });
+// });
 
 
+
+
+ScrollTrigger.create({
+    trigger: ".animate-text",
+    scroller: ".main", // required if you're using Locomotive Scroll
+    start: "top center",
+    end: "bottom center",
+    duration: 1,
+    ease : "power1.inOut",
+    onEnter: () => {
+      document.querySelector(".navbar").style.backgroundColor = "#000";
+      document.querySelector(".home").style.backgroundColor = "#000";
+      document.querySelector(".about").style.backgroundColor = "#000"; // Optional: make text visible
+      document.querySelector("#why-us").style.backgroundColor = "#000"; // Optional: make text visible
+      document.querySelector(".animate-text").style.backgroundColor = "#000"; // Optional: make text visible
+      document.querySelector(".about").style.color = "#000"; // Optional: make text visible
+      document.querySelector("#why-us").style.color = "#000"; // Optional: make text visible
+      
+    },
+    onLeaveBack: () => {
+      document.querySelector(".navbar").style.backgroundColor = "#fff";
+      document.querySelector(".home").style.backgroundColor = "#fff";
+      document.querySelector(".about").style.backgroundColor = "#fff"; // Optional: make text visible
+      document.querySelector("#why-us").style.backgroundColor = "#fff"; // Optional: make text visible
+      document.querySelector(".animate-text").style.backgroundColor = "#fff"; // Optional: make text visible
+      document.querySelector(".about").style.color = "#fff"; // Optional: make text visible
+      document.querySelector("#why-us").style.color = "#fff"; // Optional: make text visible
+    }
+  });

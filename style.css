@@ -70,3 +70,10 @@
 
   
   
+  .feedback-card {
+    top: 0;
+  }
+  
+  .animate-text {
+    transition:  0.9s ease;
+  }
