@@ -1,4 +1,7 @@
-
+ function heelloWorld(){
+    console.log("Hello World")
+    
+ }
 
 function init() {
   gsap.registerPlugin(ScrollTrigger);
@@ -181,14 +184,12 @@ boxes.forEach(function(ele){
 // });
 
 
-
-
 ScrollTrigger.create({
     trigger: ".animate-text",
     scroller: ".main", // required if you're using Locomotive Scroll
     start: "top center",
     end: "bottom center",
-    duration: 1,
+    duration: 2,
     ease : "power1.inOut",
     onEnter: () => {
       document.querySelector(".navbar").style.backgroundColor = "#000";
@@ -196,6 +197,7 @@ ScrollTrigger.create({
       document.querySelector(".about").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector("#why-us").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector(".animate-text").style.backgroundColor = "#000"; // Optional: make text visible
+      document.querySelector(".work").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector(".about").style.color = "#000"; // Optional: make text visible
       document.querySelector("#why-us").style.color = "#000"; // Optional: make text visible
       
@@ -206,7 +208,27 @@ ScrollTrigger.create({
       document.querySelector(".about").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector("#why-us").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector(".animate-text").style.backgroundColor = "#fff"; // Optional: make text visible
+      document.querySelector(".work").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector(".about").style.color = "#fff"; // Optional: make text visible
       document.querySelector("#why-us").style.color = "#fff"; // Optional: make text visible
     }
   });
+
+
+
+  
+document.querySelectorAll('.feedback-card').forEach(card => {
+  tl.to(card, {
+      scale: 0.7,
+      x: 200,
+      opacity: 0,
+      duration: 0.9,
+      scrollTrigger: {
+          trigger: card,
+          start: "top 10%",
+          bottom: "bottom 15%",
+          scrub: true,
+          scroller: ".main",
+      }
+  } ,"b")
+})
