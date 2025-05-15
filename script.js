@@ -197,6 +197,7 @@ ScrollTrigger.create({
       document.querySelector(".about").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector("#why-us").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector(".animate-text").style.backgroundColor = "#000"; // Optional: make text visible
+      document.querySelector(".marquee").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector(".work").style.backgroundColor = "#000"; // Optional: make text visible
       document.querySelector(".about").style.color = "#000"; // Optional: make text visible
       document.querySelector("#why-us").style.color = "#000"; // Optional: make text visible
@@ -208,6 +209,7 @@ ScrollTrigger.create({
       document.querySelector(".about").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector("#why-us").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector(".animate-text").style.backgroundColor = "#fff"; // Optional: make text visible
+      document.querySelector(".marquee").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector(".work").style.backgroundColor = "#fff"; // Optional: make text visible
       document.querySelector(".about").style.color = "#fff"; // Optional: make text visible
       document.querySelector("#why-us").style.color = "#fff"; // Optional: make text visible

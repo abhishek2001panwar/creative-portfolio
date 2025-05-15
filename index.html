@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,8 +24,8 @@
   <body>
     <div class="cursor"></div>
 
-    <div  data-scroll-container class="main">
-    <!-- Navbar -->
+    <div data-scroll-container class="main">
+      <!-- Navbar -->
     <header class="navbar fixed w-full z-50 backdrop-blur-xl">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20 ">
@@ -124,8 +123,9 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section
+    
+      <!-- Hero Section -->
+       <section
       class="home h-screen flex  items-center justify-center md:p-20 text-center"
       id="home"
     >
@@ -162,143 +162,208 @@
      
     </section>
 
-    <!-- About Section -->
+      <!-- About Section -->
 
-    <section 
-     
-      class="about relative w-full h-screen flex items-center justify-center">
-      <!-- Video container - 50% width and height, centered -->
-      <div class="video-wrapper relative w-1/2 h-1/2 overflow-hidden rounded-lg mx-auto">
-        <!-- Video background -->
-        <video 
-          src="https://player.vimeo.com/progressive_redirect/playback/1020697798/rendition/720p/file.mp4?loc=external&log_user=0&signature=cd45f23683db91c40f08a3f4a31ba153f1e93eac3d4f98cb3ca4b651b8830d04"
-          autoplay
-          loop
-          muted
-          playsinline
-          class="absolute top-0 left-0 w-full h-full object-cover"
-        ></video>
-
-        <!-- Centered text container -->
-        <div class="absolute inset-0 flex items-center justify-center ">
-          <div
-            class="bg-white bg-opacity-80 p-8 md:p-10 rounded-lg shadow-md max-w-lg text-center border-b-4 border-[#51483f]"
-          >
-            <h2
-              class="satisfy-regular text-3xl md:text-4xl font-bold mb-4 text-colour"
-            >
-              Crafting Exceptional Web Experiences
-            </h2>
-            <p class="text-md  mt-10 rounded-md p-4 bg-zinc-100 mb-6">
-              Designing and Developing Seamless, Innovative, and User-Centric
-              Websites for the Digital World
-            </p>
-            <a
-              href="#contact"
-              class="py-3 px-6 rounded-full border border-black text-black hover:bg-black hover:text-white transition"
-            >
-              Discover More
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- //why us section -->
-
-    <section class="service-item " id="why-us">
-      <div class="container mx-auto pt-32">
-        <div class="flex flex-col md:flex-row gap-20">
-          <div class="md:w-2/3 flex flex-col md:sticky top-32 h-max p-10">
-            <h3
-              class="satisfy-regular text-lg font-semibold text-gray-600 mb-3"
-            >
-              Why Choose Us
-            </h3>
-            <h2
-              class="satisfy-regular text-4xl md:text-7xl font-['Matter'] mb-8 text-[#51483f]"
-            >
-              What makes our services stand out
-            </h2>
-            <a
-              href="#contact"
-              class="py-3 px-6 w-max rounded-full border border-black text-black hover:bg-black hover:text-white transition"
-            >
-              Learn More
-            </a>
-          </div>
-
-          <div class="md:w-1/2 space-y-8 service-items">
-            <div
-              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
-            >
-              <h4 class="text-2xl font-bold mb-4">Creative Design</h4>
-              <p class="text-gray-600 text-lg">
-                We create unique designs that capture your brand's essence and
-                appeal to your target audience.
-              </p>
-            </div>
-
-            <div
-              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
-            >
-              <h4 class="text-2xl font-bold mb-4">User Experience</h4>
-              <p class="text-gray-600 text-lg">
-                We prioritize intuitive interfaces and seamless interactions to
-                enhance user satisfaction.
-              </p>
-            </div>
-
-            <div
-              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
-            >
-              <h4 class="text-2xl font-bold mb-4">Performance</h4>
-              <p class="text-gray-600 text-lg">
-                Our solutions are optimized for speed and efficiency, ensuring
-                excellent performance on all devices.
-              </p>
-            </div>
-
-            <div
-              class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
-            >
-              <h4 class="text-2xl font-bold mb-4">Responsive Design</h4>
-              <p class="text-gray-600 text-lg">
-                We build websites that look and function perfectly across all
-                screen sizes and devices.
-              </p>
-            </div>
-
-            <div
-              class="p-12 hover:bg-gray-50 transition-colors rounded-lg service-item"
-            >
-              <h4 class="text-2xl font-bold mb-4">Support & Maintenance</h4>
-              <p class="text-gray-600 text-lg">
-                We provide ongoing support and maintenance to keep your digital
-                presence running smoothly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="animate-text max-w-8xl font-['Roboto'] flex flex-col justify-center items-center p-20"
-    >
-      <h1
-        class="text-[8rem] satisfy-regular text-center leading-none"
-        style="-webkit-text-stroke: 2px #51483f; color: transparent"
+      <section
+        id="about"
+        class="about relative w-full h-screen flex items-center justify-center"
       >
-        <span id="image" data-image="https://images.unsplash.com/photo-1688103920333-117afda88518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60">See</span> 
-        <span id="image" data-image="https://images.unsplash.com/photo-1686904423955-b928225c6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60">Your</span> <br />
-        <span id="image" data-image="https://images.unsplash.com/photo-1687913161653-7cddb0ba09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80">Design</span> 
-        <span id="image" data-image="https://images.unsplash.com/photo-1682687982501-1e58ab814714?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">Dreams</span> <br />
-        <span id="image" data-image="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">Come</span> 
-        <span id="image" data-image="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">To</span> 
-        <span id="image" data-image="https://images.unsplash.com/photo-1682695798256-28a674122872?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">Life</span>
-      </h1>
-      <div class="py-10 overflow-hidden">
+        <!-- Video container - 50% width and height, centered -->
+        <div
+          class="video-wrapper relative w-1/2 h-1/2 overflow-hidden rounded-lg mx-auto"
+        >
+          <!-- Video background -->
+          <video
+            src="https://player.vimeo.com/progressive_redirect/playback/1020697798/rendition/720p/file.mp4?loc=external&log_user=0&signature=cd45f23683db91c40f08a3f4a31ba153f1e93eac3d4f98cb3ca4b651b8830d04"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="absolute top-0 left-0 w-full h-full object-cover"
+          ></video>
+
+          <!-- Centered text container -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="bg-white bg-opacity-80 p-8 md:p-8 rounded-lg shadow-md max-w-lg text-center border-t-4 border-[#51483f]"
+            >
+              <div class="flex items-center justify-center mb-3">
+                <i class="ri-code-box-line text-3xl text-[#51483f] mr-2"></i>
+                <i class="ri-palette-line text-3xl text-[#51483f]"></i>
+              </div>
+              <h2
+                class="satisfy-regular text-3xl md:text-4xl font-bold mb-4 text-colour"
+              >
+                Crafting Exceptional Web Experiences
+              </h2>
+              <p class="text-md mt-10 rounded-md p-4 bg-zinc-100 mb-6">
+                <i class="ri-check-double-line text-xl text-[#51483f] mr-2"></i>
+                Designing and Developing Seamless, Innovative, and User-Centric
+                Websites for the Digital World
+              </p>
+
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                <div
+                  class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#51483f] border-opacity-20"
+                >
+                  <i
+                    class="ri-code-s-slash-line text-2xl text-[#51483f] mb-2"
+                  ></i>
+                  <span class="text-sm font-medium">Clean Code</span>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#51483f] border-opacity-20"
+                >
+                  <i class="ri-device-line text-2xl text-[#51483f] mb-2"></i>
+                  <span class="text-sm font-medium">Responsive</span>
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#51483f] border-opacity-20"
+                >
+                  <i class="ri-rocket-line text-2xl text-[#51483f] mb-2"></i>
+                  <span class="text-sm font-medium">Performance</span>
+                </div>
+              </div>
+              <a
+                href="#contact"
+                class="py-3 px-6 rounded-full border border-black text-black hover:bg-black hover:text-white transition flex items-center justify-center max-w-xs mx-auto"
+              >
+                Discover More
+                <i class="ri-arrow-right-line ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- //why us section -->
+
+      <section class="service-item" id="why-us">
+        <div class="container mx-auto pt-32">
+          <div class="flex flex-col md:flex-row gap-20">
+            <div class="md:w-2/3 flex flex-col md:sticky top-32 h-max p-10">
+              <h3
+                class="satisfy-regular text-lg font-semibold text-gray-600 mb-3"
+              >
+                Why Choose Us
+              </h3>
+              <h2
+                class="satisfy-regular text-4xl md:text-7xl font-['Matter'] mb-8 text-[#51483f]"
+              >
+                What makes our services stand out
+              </h2>
+              <a
+                href="#contact"
+                class="py-3 px-6 w-max rounded-full border border-black text-black hover:bg-black hover:text-white transition"
+              >
+                Learn More
+              </a>
+            </div>
+
+            <div class="md:w-1/2 space-y-8 service-items">
+              <div
+                class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+              >
+                <h4 class="text-2xl font-bold mb-4">Creative Design</h4>
+                <p class="text-gray-600 text-lg">
+                  We create unique designs that capture your brand's essence and
+                  appeal to your target audience.
+                </p>
+              </div>
+
+              <div
+                class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+              >
+                <h4 class="text-2xl font-bold mb-4">User Experience</h4>
+                <p class="text-gray-600 text-lg">
+                  We prioritize intuitive interfaces and seamless interactions
+                  to enhance user satisfaction.
+                </p>
+              </div>
+
+              <div
+                class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+              >
+                <h4 class="text-2xl font-bold mb-4">Performance</h4>
+                <p class="text-gray-600 text-lg">
+                  Our solutions are optimized for speed and efficiency, ensuring
+                  excellent performance on all devices.
+                </p>
+              </div>
+
+              <div
+                class="p-12 border-b-2 hover:bg-gray-50 transition-colors rounded-lg service-item"
+              >
+                <h4 class="text-2xl font-bold mb-4">Responsive Design</h4>
+                <p class="text-gray-600 text-lg">
+                  We build websites that look and function perfectly across all
+                  screen sizes and devices.
+                </p>
+              </div>
+
+              <div
+                class="p-12 hover:bg-gray-50 transition-colors rounded-lg service-item"
+              >
+                <h4 class="text-2xl font-bold mb-4">Support & Maintenance</h4>
+                <p class="text-gray-600 text-lg">
+                  We provide ongoing support and maintenance to keep your
+                  digital presence running smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="animate-text max-w-8xl font-['Roboto'] flex flex-col justify-center items-center p-20"
+      >
+        <h1
+          class="text-[8rem] satisfy-regular text-center leading-none"
+          style="-webkit-text-stroke: 2px #51483f; color: transparent"
+        >
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1688103920333-117afda88518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            >See</span
+          >
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1686904423955-b928225c6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            >Your</span
+          >
+          <br />
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1687913161653-7cddb0ba09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+            >Design</span
+          >
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1682687982501-1e58ab814714?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+            >Dreams</span
+          >
+          <br />
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            >Come</span
+          >
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            >To</span
+          >
+          <span
+            id="image"
+            data-image="https://images.unsplash.com/photo-1682695798256-28a674122872?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            >Life</span
+          >
+        </h1>
+      </section>
+
+      <!-- Marquee Section -->
+      <div class="marquee py-10 overflow-hidden">
         <div class="marquee-container relative">
           <div class="marquee flex items-center space-x-32 animate-marquee">
             <a
@@ -318,7 +383,7 @@
               </svg>
               <span class="ml-2 text-xl">GitHub</span>
             </a>
-  
+
             <a
               href="#"
               class="text-[#51483f] hover:text-black transition-colors flex items-center"
@@ -336,7 +401,7 @@
               </svg>
               <span class="ml-2 text-xl">Behance</span>
             </a>
-  
+
             <a
               href="#"
               class="text-[#51483f] hover:text-black transition-colors flex items-center"
@@ -354,7 +419,7 @@
               </svg>
               <span class="ml-2 text-xl">Instagram</span>
             </a>
-  
+
             <a
               href="#"
               class="text-[#51483f] hover:text-black transition-colors flex items-center"
@@ -372,7 +437,7 @@
               </svg>
               <span class="ml-2 text-xl">LinkedIn</span>
             </a>
-  
+
             <a
               href="#"
               class="text-[#51483f] hover:text-black transition-colors flex items-center"
@@ -390,7 +455,7 @@
               </svg>
               <span class="ml-2 text-xl">Dribbble</span>
             </a>
-  
+
             <a
               href="#"
               class="text-[#51483f] hover:text-black transition-colors flex items-center"
@@ -411,512 +476,837 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Marquee Section -->
-    
+      <!-- how i work-->
 
-    <!-- how i work-->
+      <section
+        id="services"
+        class="work max-w-8xl text-colour font-['matter'] flex justify-center pt-20 pb-20"
+      >
+        <div class="flex flex-col w-full">
+          <h1 class="text-4xl text-center leading-none text-colour">
+            How I Work
+          </h1>
+          <h1
+            class="text-6xl md:text-8xl font-light text-center leading-none satisfy-regular"
+          >
+            3 Simple Steps
+          </h1>
 
-    <section
-      class="work max-w-8xl text-colour font-['matter'] flex justify-center pt-20 pb-20"
-    >
-      <div class="flex flex-col w-full">
-        <h1 class="text-4xl text-center leading-none text-colour">How I Work</h1>
-        <h1 class="text-6xl md:text-8xl font-light text-center leading-none satisfy-regular">3 Simple Steps</h1>
-
-        <div class="text-center mt-20 space-y-16">
-          <div class="flex flex-col items-center">
-            <div
-              class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
-            >
-              1
-            </div>
-            <!-- Vertical line -->
-            <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
-            <h3 class="text-2xl font-semibold text-colour">
-              Discovery Call
-            </h3>
-            <p class="text-lg text-colour mt-2 max-w-md">
-              We discuss your vision, requirements, and project scope
-            </p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div
-              class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
-            >
-              2
-            </div>
-            <!-- Vertical line -->
-            <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
-            <h3 class="text-2xl font-semibold text-colour">
-              Design & Development
-            </h3>
-            <p class="text-lg text-colour mt-2 max-w-md">
-              I create prototypes and build your project with regular updates
-            </p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div
-              class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
-            >
-              3
-            </div>
-            <!-- Vertical line -->
-            <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
-            <h3 class="text-2xl font-semibold text-colour">
-              Launch & Support
-            </h3>
-            <p class="text-lg text-colour mt-2 max-w-md">
-              We finalize, deploy and provide ongoing maintenance
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- feedback section-->
-
-    <section class="py-32 font-['Matter']" id="feedback">
-      <div class="container mx-auto px-10 md:px-20">
-        <h2 class="text-4xl md:text-6xl text-center mb-16 text-[#51483f] satisfy-regular">Client Feedback</h2>
-        
-        <div class="flex flex-col items-center justify-center gap-6">
-          <!-- Card 1 -->
-          <div class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg">
-            <div class="flex mb-6 text-yellow-500">
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-            </div>
-            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
-              "The team was incredibly professional and delivered on time. I
-              couldn't be happier with the results!"
-            </p>
-            <div class="flex items-center">
-              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
-                <i class="ri-user-line text-xl"></i>
+          <div class="text-center mt-20 space-y-16">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
+              >
+                1
               </div>
-              <div>
-                <p class="font-bold text-lg">John Doe</p>
-                <p class="text-gray-500">CEO, Company Name</p>
-              </div>
+              <!-- Vertical line -->
+              <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
+              <h3 class="text-2xl font-semibold text-colour">Discovery Call</h3>
+              <p class="text-lg text-colour mt-2 max-w-md">
+                We discuss your vision, requirements, and project scope
+              </p>
             </div>
-          </div>
 
-          <!-- Card 2 -->
-          <div class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg">
-            <div class="flex mb-6 text-yellow-500">
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-half-fill text-2xl"></i>
-            </div>
-            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
-              "Their attention to detail and creativity made all the difference.
-              Highly recommend their services!"
-            </p>
-            <div class="flex items-center">
-              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
-                <i class="ri-user-line text-xl"></i>
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
+              >
+                2
               </div>
-              <div>
-                <p class="font-bold text-lg">Jane Smith</p>
-                <p class="text-gray-500">Marketing Director, Company Name</p>
-              </div>
+              <!-- Vertical line -->
+              <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
+              <h3 class="text-2xl font-semibold text-colour">
+                Design & Development
+              </h3>
+              <p class="text-lg text-colour mt-2 max-w-md">
+                I create prototypes and build your project with regular updates
+              </p>
             </div>
-          </div>
 
-          <!-- Card 3 -->
-          <div class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg">
-            <div class="flex mb-6 text-yellow-500">
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-            </div>
-            <p class="text-gray-700 text-xl mb-8 leading-relaxed">
-              "A fantastic experience from start to finish. The team really
-              understood our needs and delivered beyond expectations."
-            </p>
-            <div class="flex items-center">
-              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
-                <i class="ri-user-line text-xl"></i>
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-full border border-black flex items-center justify-center text-3xl font-bold text-colour"
+              >
+                3
               </div>
-              <div>
-                <p class="font-bold text-lg">Alice Johnson</p>
-                <p class="text-gray-500">Product Manager, Company Name</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg">
-            <div class="flex mb-6 text-yellow-500">
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-              <i class="ri-star-fill text-2xl"></i>
-            </div>
-            <p class="text-gray-700 text-xl mb-8 leading-relaxed"></p>
-              "The project was delivered with exceptional quality and ahead of schedule. 
-              I'm looking forward to working together again in the future."
-            </p>
-            <div class="flex items-center">
-              <div class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4">
-                <i class="ri-user-line text-xl"></i>
-              </div>
-              <div>
-                <p class="font-bold text-lg">Robert Chen</p>
-                <p class="text-gray-500">CTO, Company Name</p>
-              </div>
+              <!-- Vertical line -->
+              <div class="h-20 w-0.5 bg-[#51483f] my-2"></div>
+              <h3 class="text-2xl font-semibold text-colour">
+                Launch & Support
+              </h3>
+              <p class="text-lg text-colour mt-2 max-w-md">
+                We finalize, deploy and provide ongoing maintenance
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Project section-->
+      <!-- feedback section-->
 
-    <section class="py-20 " id="projects">
-      <div class="container mx-auto px-10 md:px-20">
-        <!-- Section heading -->
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-['Matter'] mb-4 text-[#51483f] satisfy-regular">Project Overview</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Showcasing some of my recent work and creative solutions</p>
-        </div>
-  
-        <!-- Project items -->
-        <div class="space-y-32">
-          <!-- Project 1 - Text left, image right -->
-          <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2 space-y-6">
-              <h3 class="text-3xl font-bold">E-commerce Platform</h3>
-              <p class="text-lg text-gray-700 leading-relaxed">
-                A fully responsive e-commerce solution built with React and Node.js. Features include user authentication, 
-                product filtering, cart functionality, and payment processing integration.
+      <section class="py-32 font-['Matter']" id="feedback">
+        <div class="container mx-auto px-10 md:px-20">
+          <h2
+            class="text-4xl md:text-6xl text-center mb-16 text-[#51483f] satisfy-regular"
+          >
+            Client Feedback
+          </h2>
+
+          <div class="flex flex-col items-center justify-center gap-6">
+            <!-- Card 1 -->
+            <div
+              class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="flex mb-6 text-yellow-500">
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+              </div>
+              <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+                "Working with this team transformed our online presence
+                completely. Their design sensibility and technical expertise
+                helped us increase conversions by 45% within three months of
+                launch."
               </p>
-              <div class="flex items-center space-x-6 pt-4">
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-eye-line text-xl mr-2"></i>
-                  <span>View Live</span>
-                </a>
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-github-fill text-xl mr-2"></i>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
-            <div class="md:w-1/2 mt-10 md:mt-0">
-              <div class="rounded-xl  overflow-hidden">
-                <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1688103920333-117afda88518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="E-commerce Project" class="w-full h-[70vh] transform rounded-md  transition-transform">
-              </div>
-            </div>
-          </div>
-  
-          <!-- Project 2 - Image left, text right -->
-          <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-            <div class="md:w-1/2 mt-10 md:mt-0">
-              <div class="rounded-2xl">
-                <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website" class="w-full h-[70vh] transform  transition-transform">
-              </div>
-            </div>
-            <div class="md:w-1/2 space-y-6">
-              <h3 class="text-3xl font-bold">Portfolio Website</h3>
-              <p class="text-lg text-gray-700 leading-relaxed">
-                A modern portfolio website with smooth animations and interactive elements. 
-                Built with HTML, CSS, and JavaScript, featuring a responsive design optimized for all devices.
-              </p>
-              <div class="flex items-center space-x-6 pt-4">
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-eye-line text-xl mr-2"></i>
-                  <span>View Live</span>
-                </a>
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-github-fill text-xl mr-2"></i>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Project 3 - Text left, image right -->
-          <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2 space-y-6">
-              <h3 class="text-3xl font-bold">Task Management App</h3>
-              <p class="text-lg text-gray-700 leading-relaxed">
-                A full-stack task management application with user accounts, task categories, priorities, 
-                and deadline notifications. Built with the MERN stack and featuring real-time updates.
-              </p>
-              <div class="flex items-center space-x-6 pt-4">
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-eye-line text-xl mr-2"></i>
-                  <span>View Live</span>
-                </a>
-                <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-                  <i class="ri-github-fill text-xl mr-2"></i>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
-            <div class="md:w-1/2 mt-10 md:mt-0">
-              <div class="rounded-2xl ">
-                <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Task Management App" class="w-full h-[70vh] transform  transition-transform">
-              </div>
-            </div>
-          </div>
-            <!-- Project 2 - Image left, text right -->
-            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-              <div class="md:w-1/2 mt-10 md:mt-0">
-                <div class="rounded-2xl">
-                  <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website" class="w-full h-[70vh] transform  transition-transform">
+              <div class="flex items-center">
+                <div
+                  class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Michael Thompson</p>
+                  <p class="text-gray-500">CEO, Bluefin Technologies</p>
                 </div>
               </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="flex mb-6 text-yellow-500">
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-half-fill text-2xl"></i>
+              </div>
+              <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+                "The responsive design solutions provided were exactly what our
+                e-commerce platform needed. Our mobile sales have increased by
+                60% and the user experience feedback has been overwhelmingly
+                positive."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Sarah Patel</p>
+                  <p class="text-gray-500">
+                    Marketing Director, Evergreen Retail
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="flex mb-6 text-yellow-500">
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+              </div>
+              <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+                "As a startup, we needed a website that could grow with us. The
+                scalable solution delivered exceeded our expectations and has
+                saved us countless hours of development time as we've expanded
+                our services."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-lg">David Rodriguez</p>
+                  <p class="text-gray-500">Founder, NexTech Solutions</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="feedback-card sticky top-[15px] bg-white p-8 md:p-12 rounded-lg shadow-md w-full max-w-xl transition-all hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="flex mb-6 text-yellow-500">
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+                <i class="ri-star-fill text-2xl"></i>
+              </div>
+              <p class="text-gray-700 text-xl mb-8 leading-relaxed">
+                "The attention to accessibility while maintaining stunning
+                visual design is what impressed me most. Our web application now
+                serves all our users equally well, and we've received
+                recognition for inclusive design excellence."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="bg-gray-200 rounded-full h-12 w-12 flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Emma Chen</p>
+                  <p class="text-gray-500">CTO, Accessible Innovations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Project section-->
+      <section class="py-20" id="projects">
+        <div class="container mx-auto px-10 md:px-20">
+          <!-- Section heading -->
+          <div class="text-center mb-16">
+            <h2
+              class="text-4xl md:text-6xl font-['Matter'] mb-4 text-[#51483f] satisfy-regular"
+            >
+              Project Overview
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Showcasing some of my recent work and creative solutions
+            </p>
+          </div>
+
+          <!-- Project items -->
+          <div class="space-y-32">
+            <!-- Project 1 - Text left, image right -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
               <div class="md:w-1/2 space-y-6">
-                <h3 class="text-3xl font-bold">Portfolio Website</h3>
+                <h3 class="text-3xl font-bold">Ochi Design Clone</h3>
                 <p class="text-lg text-gray-700 leading-relaxed">
-                  A modern portfolio website with smooth animations and interactive elements. 
-                  Built with HTML, CSS, and JavaScript, featuring a responsive design optimized for all devices.
+                  A visually striking, animated portfolio site inspired by Ochi
+                  Design. Built using modern frontend frameworks with smooth
+                  page transitions, scroll-based animations, and custom cursor
+                  interactions to deliver a premium design experience.
                 </p>
                 <div class="flex items-center space-x-6 pt-4">
-                  <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <a
+                    href="https://ochi-design-wheat.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
                     <i class="ri-eye-line text-xl mr-2"></i>
                     <span>View Live</span>
                   </a>
-                  <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
                     <i class="ri-github-fill text-xl mr-2"></i>
                     <span>Source Code</span>
                   </a>
                 </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >GSAP</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >React</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Framer Motion</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Tailwind CSS</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1688103920333-117afda88518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Ochi Design Clone"
+                    class="w-full h-[70vh] transform rounded-md transition-transform"
+                  />
+                </div>
               </div>
             </div>
-       <!-- Project 3 - Text left, image right -->
-       <div class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2 space-y-6">
-          <h3 class="text-3xl font-bold">Task Management App</h3>
-          <p class="text-lg text-gray-700 leading-relaxed">
-            A full-stack task management application with user accounts, task categories, priorities, 
-            and deadline notifications. Built with the MERN stack and featuring real-time updates.
+
+            <!-- Project 2 - Image left, text right -->
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-2xl">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Cuberto Clone"
+                    class="w-full h-[70vh] transform transition-transform"
+                  />
+                </div>
+              </div>
+              <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold">Cuberto Clone</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  An advanced UI/UX portfolio clone inspired by Cuberto Studio.
+                  It features smooth parallax effects, mouse-driven
+                  interactions, fullscreen transitions, and bold typography,
+                  showcasing high-end frontend skills and animation mastery.
+                </p>
+                <div class="flex items-center space-x-6 pt-4">
+                  <a
+                    href="https://cuberto-new.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-eye-line text-xl mr-2"></i>
+                    <span>View Live</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-github-fill text-xl mr-2"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >JavaScript</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Locomotive Scroll</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >GSAP</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Next.js</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 - Text left, image right -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+              <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold">Design Pattern Clone</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  A modern design studio website that mimics the style of
+                  top-tier branding agencies. It includes scroll-triggered
+                  animations, stylish hover effects, and project showcase
+                  sections. Ideal for highlighting modern web aesthetics.
+                </p>
+                <div class="flex items-center space-x-6 pt-4">
+                  <a
+                    href="https://design-pattern-sus.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-eye-line text-xl mr-2"></i>
+                    <span>View Live</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-github-fill text-xl mr-2"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >React</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >CSS3</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >ScrollTrigger</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Responsive Design</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-2xl">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Design Pattern Clone"
+                    class="w-full h-[70vh] transform transition-transform"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 - Image left, text right -->
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-2xl">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Thirtysix Clone"
+                    class="w-full h-[70vh] transform transition-transform"
+                  />
+                </div>
+              </div>
+              <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold">Thirtysix Clone</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  A minimal and elegant clone of the Thirtysix design studio
+                  site. The layout relies heavily on whitespace, large
+                  typography, and fluid transitions. Great demonstration of
+                  clean design implementation using modern frontend stacks.
+                </p>
+                <div class="flex items-center space-x-6 pt-4">
+                  <a
+                    href="https://thirysix.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-eye-line text-xl mr-2"></i>
+                    <span>View Live</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-github-fill text-xl mr-2"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >HTML5</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >CSS3</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >JavaScript</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Minimal Design</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 - Text left, image right -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+              <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold">Expo Ape Clone</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  A sleek and dark-themed animated site inspired by Web3/NFT
+                  culture. Uses rich motion design and futuristic typography to
+                  showcase a project or product, demonstrating strong visual
+                  storytelling.
+                </p>
+                <div class="flex items-center space-x-6 pt-4">
+                  <a
+                    href="https://expo-ape.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-eye-line text-xl mr-2"></i>
+                    <span>View Live</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-github-fill text-xl mr-2"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Three.js</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >WebGL</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >GSAP</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >React</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-2xl">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Expo Ape Clone"
+                    class="w-full h-[70vh] transform transition-transform"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 - Image left, text right -->
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+              <div class="md:w-1/2 mt-10 md:mt-0">
+                <div class="rounded-2xl">
+                  <img
+                    data-scroll
+                    data-scroll-speed="1.5"
+                    src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Personal Portfolio – Abhishek"
+                    class="w-full h-[70vh] transform transition-transform"
+                  />
+                </div>
+              </div>
+              <div class="md:w-1/2 space-y-6">
+                <h3 class="text-3xl font-bold">
+                  Personal Portfolio – Abhishek
+                </h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                  A personal portfolio website built to showcase your work,
+                  skills, and resume. Features smooth transitions, clean layout,
+                  and project showcases. Ideal for applying to jobs and
+                  freelance opportunities.
+                </p>
+                <div class="flex items-center space-x-6 pt-4">
+                  <a
+                    href="https://abhishek-developer.vercel.app"
+                    target="_blank"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-eye-line text-xl mr-2"></i>
+                    <span>View Live</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center text-[#51483f] hover:text-black transition-colors"
+                  >
+                    <i class="ri-github-fill text-xl mr-2"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4">
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Next.js</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Tailwind CSS</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Vercel</span
+                  >
+                  <span class="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                    >Responsive Design</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-16 font-[''] flex justify-center items-center">
+        <div class="max-w-6xl mx-auto text-center px-4">
+          <h1
+            class="text-3xl md:text-7xl font-bold mb-6 text-[#51483f] satisfy-regular"
+          >
+            Allow Yourself To <br />
+            See Your Design Dreams <br />
+
+            Come Alive
+          </h1>
+          <p class="text-xl md:text-2xl mb-12 text-[#51483f] max-w-2xl mx-auto">
+            Transform your ideas into stunning digital experiences that
+            captivate and convert
           </p>
-          <div class="flex items-center space-x-6 pt-4">
-            <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-              <i class="ri-eye-line text-xl mr-2"></i>
-              <span>View Live</span>
-            </a>
-            <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-              <i class="ri-github-fill text-xl mr-2"></i>
-              <span>Source Code</span>
-            </a>
-          </div>
+          <a
+            href="#contact"
+            class="py-4 px-6 rounded-full border text-black transition"
+          >
+            Begin Your Journey
+          </a>
         </div>
-        <div class="md:w-1/2 mt-10 md:mt-0">
-          <div class="rounded-2xl ">
-            <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1682687218147-9806132dc697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Task Management App" class="w-full h-[70vh] transform  transition-transform">
-          </div>
-        </div>
-      </div>
-       <!-- Project 2 - Image left, text right -->
-       <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-        <div class="md:w-1/2 mt-10 md:mt-0">
-          <div class="rounded-2xl">
-            <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website" class="w-full h-[70vh] transform  transition-transform">
-          </div>
-        </div>
-        <div class="md:w-1/2 space-y-6">
-          <h3 class="text-3xl font-bold">Portfolio Website</h3>
-          <p class="text-lg text-gray-700 leading-relaxed">
-            A modern portfolio website with smooth animations and interactive elements. 
-            Built with HTML, CSS, and JavaScript, featuring a responsive design optimized for all devices.
-          </p>
-          <div class="flex items-center space-x-6 pt-4">
-            <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-              <i class="ri-eye-line text-xl mr-2"></i>
-              <span>View Live</span>
-            </a>
-            <a href="#" class="flex items-center text-[#51483f] hover:text-black transition-colors">
-              <i class="ri-github-fill text-xl mr-2"></i>
-              <span>Source Code</span>
-            </a>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-  
-    <section class="p-16 font-[''] flex justify-center items-center">
-      <div class="max-w-6xl mx-auto text-center px-4">
-        <h1 class="text-3xl md:text-7xl  font-bold mb-6 text-[#51483f] satisfy-regular">Allow
-          Yourself
-          To <br>
-          See  
-          Your
-          Design
-          
-          Dreams  <br>
-  
-          Come
-          Alive</h1>
-        <p class="text-xl md:text-2xl mb-12 text-[#51483f] max-w-2xl mx-auto">Transform your ideas into stunning digital experiences that captivate and convert</p>
-        <a href="#contact"  class="py-4 px-6 rounded-full border text-black transition">
-          Begin Your Journey
-        </a>
-      </div>
-    </section>
+      <!-- faq Section -->
+      <section class="py-20 font-['Matter']" id="faq">
+        <div class="max-w-8xl container mx-auto px-10 md:px-20">
+          <!-- Two-line heading -->
+          <h2
+            class="text-4xl md:text-6xl mb-16 text-[#51483f] satisfy-regular text-center"
+          >
+            Frequently Asked <br />
+            Questions
+          </h2>
 
+          <!-- FAQ Items -->
+          <div class="space-y-6 mt-12">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <div
+                class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300"
+                onclick="toggleFaq(this)"
+              >
+                <h3 class="text-2xl font-semibold">How does pricing work?</h3>
+                <div
+                  class="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                >
+                  <i class="ri-add-line text-2xl"></i>
+                </div>
+              </div>
+              <div class="faq-answer bg-white p-6 rounded-lg hidden">
+                <p class="text-lg text-gray-700">
+                  We offer custom pricing based on project scope and
+                  requirements. Contact us for a personalized quote tailored to
+                  your specific needs.
+                </p>
+              </div>
+            </div>
 
-    <!-- faq Section -->
-    <section class="py-20  font-['Matter']" id="faq">
-      <div class="max-w-8xl container mx-auto px-10 md:px-20">
-        <!-- Two-line heading -->
-        <h2 class="text-4xl md:text-6xl mb-16 text-[#51483f] satisfy-regular text-center">
-          Frequently Asked <br />
-          Questions
-        </h2>
-        
-        <!-- FAQ Items -->
-        <div class="space-y-6 mt-12">
-          
-          <!-- FAQ Item 1 -->
-          <div class="faq-item">
-            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
-              <h3 class="text-2xl font-semibold">How does pricing work?</h3>
-              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-          <i class="ri-add-line text-2xl"></i>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <div
+                class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300"
+                onclick="toggleFaq(this)"
+              >
+                <h3 class="text-2xl font-semibold">What services you offer?</h3>
+                <div
+                  class="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                >
+                  <i class="ri-add-line text-2xl"></i>
+                </div>
+              </div>
+              <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+                <p class="text-lg text-gray-700">
+                  We provide web design, development, UI/UX design, branding,
+                  and digital marketing services to help businesses establish a
+                  strong online presence.
+                </p>
               </div>
             </div>
-            <div class="faq-answer bg-white p-6 rounded-lg hidden">
-              <p class="text-lg text-gray-700">We offer custom pricing based on project scope and requirements. Contact us for a personalized quote tailored to your specific needs.</p>
-            </div>
-          </div>
-          
-          <!-- FAQ Item 2 -->
-          <div class="faq-item">
-            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
-              <h3 class="text-2xl font-semibold">What services you offer?</h3>
-              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-          <i class="ri-add-line text-2xl"></i>
-              </div>
-            </div>
-            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
-              <p class="text-lg text-gray-700">We provide web design, development, UI/UX design, branding, and digital marketing services to help businesses establish a strong online presence.</p>
-            </div>
-          </div>
-          
-          <!-- FAQ Item 3 -->
-          <div class="faq-item">
-            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
-              <h3 class="text-2xl font-semibold">How long projects take?</h3>
-              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-          <i class="ri-add-line text-2xl"></i>
-              </div>
-            </div>
-            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
-              <p class="text-lg text-gray-700">Project timelines vary based on complexity and scope. Simple projects may take 2-4 weeks, while more complex ones can take 2-3 months to complete.</p>
-            </div>
-          </div>
-          
-          <!-- FAQ Item 4 -->
-          <div class="faq-item">
-            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
-              <h3 class="text-2xl font-semibold">Do you offer revisions?</h3>
-              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-          <i class="ri-add-line text-2xl"></i>
-              </div>
-            </div>
-            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
-              <p class="text-lg text-gray-700">Yes, our packages include revision rounds to ensure you're completely satisfied with the final product. Specific details are outlined in your project contract.</p>
-            </div>
-          </div>
-          
-          <!-- FAQ Item 5 -->
-          <div class="faq-item">
-            <div class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300" onclick="toggleFaq(this)">
-              <h3 class="text-2xl font-semibold">What technologies you use?</h3>
-              <div class="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-          <i class="ri-add-line text-2xl"></i>
-              </div>
-            </div>
-            <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
-              <p class="text-lg text-gray-700">We work with modern technologies including React, Node.js, WordPress, Shopify, and various design tools to deliver cutting-edge digital solutions.</p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-  
-     
-    </section>
 
-    <!--footer-->
-
-    <footer class="bg-[#cec3b8] py-20">
-      <div class="max-w-8xl mx-auto px-6 md:px-10">
-        <h1 class="text-5xl md:text-8xl font-semibold text-[#51483f] leading-tight footer">Building a <br> Greener future</h1>
-  
-        <div class="flex flex-col md:flex-row justify-between items-start mt-20 gap-12">
-          <!-- Logo section -->
-          <div class="mb-8 md:mb-0">
-            <div class="border border-[#51483f] rounded-full p-4 bg-white bg-opacity-10 shadow-lg hover:shadow-xl transition-all">
-              <img src="./logo.webp" alt="Logo" class="max-h-28" />
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <div
+                class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300"
+                onclick="toggleFaq(this)"
+              >
+                <h3 class="text-2xl font-semibold">How long projects take?</h3>
+                <div
+                  class="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                >
+                  <i class="ri-add-line text-2xl"></i>
+                </div>
+              </div>
+              <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+                <p class="text-lg text-gray-700">
+                  Project timelines vary based on complexity and scope. Simple
+                  projects may take 2-4 weeks, while more complex ones can take
+                  2-3 months to complete.
+                </p>
+              </div>
             </div>
-          </div>
-  
-          <!-- First link column -->
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2">Navigation</h3>
-            <a href="#home" class="text-md block font-medium hover:text-black transition">Home</a>
-            <a href="#about" class="text-md block font-medium hover:text-black transition">About</a>
-            <a href="#projects" class="text-md block font-medium hover:text-black transition">Projects</a>
-            <a href="#services" class="text-md block font-medium hover:text-black transition">Services</a>
-            <a href="#contact" class="text-md block font-medium hover:text-black transition">Contact</a>
-          </div>
-  
-          <!-- Second link column -->
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2">Connect</h3>
-            <a href="#" class="text-md block font-medium hover:text-black transition">LinkedIn</a>
-            <a href="#" class="text-md block font-medium hover:text-black transition">Twitter</a>
-            <a href="#" class="text-md block font-medium hover:text-black transition">Instagram</a>
-            <a href="#" class="text-md block font-medium hover:text-black transition">GitHub</a>
-            <a href="#" class="text-md block font-medium hover:text-black transition">Dribbble</a>
-          </div>
-  
-          <!-- Newsletter section -->
-          <div class="md:col-span-2 lg:col-span-3 mt-10 md:mt-0">
-            <div class="bg-white bg-opacity-20 rounded-2xl p-6 shadow-lg border border-white border-opacity-20">
-              <h5 class="text-lg font-semibold text-[#51483f] mb-4">Stay Updated</h5>
-              <p class="text-sm text-[#51483f] mb-4">Join our newsletter for the latest trends and insights</p>
-              <div class="relative">
-                <input 
-                  type="email" 
-                  class="bg-white bg-opacity-70 text-gray-800 selection-none py-3 px-5 w-full focus:outline-none  focus:ring-[#51483f] transition-all" 
-                  placeholder="Your email address">
-                <button 
-                  class="absolute right-1 top-1/2 transform rounded-full -translate-y-1/2 bg-[#51483f] hover:bg-black text-white p-2 transition-all focus:outline-none">
-                  <i class="ri-arrow-right-line text-xl"></i>
-                </button>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <div
+                class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300"
+                onclick="toggleFaq(this)"
+              >
+                <h3 class="text-2xl font-semibold">Do you offer revisions?</h3>
+                <div
+                  class="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                >
+                  <i class="ri-add-line text-2xl"></i>
+                </div>
+              </div>
+              <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+                <p class="text-lg text-gray-700">
+                  Yes, our packages include revision rounds to ensure you're
+                  completely satisfied with the final product. Specific details
+                  are outlined in your project contract.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <div
+                class="flex items-center justify-between p-6 cursor-pointer border-b border-gray-300"
+                onclick="toggleFaq(this)"
+              >
+                <h3 class="text-2xl font-semibold">
+                  What technologies you use?
+                </h3>
+                <div
+                  class="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                >
+                  <i class="ri-add-line text-2xl"></i>
+                </div>
+              </div>
+              <div class="faq-answer bg-white p-6 mt-2 rounded-lg hidden">
+                <p class="text-lg text-gray-700">
+                  We work with modern technologies including React, Node.js,
+                  WordPress, Shopify, and various design tools to deliver
+                  cutting-edge digital solutions.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Footer bottom -->
-        <div class="mt-16 pt-6 border-t border-[#a99e92] flex flex-col md:flex-row items-center justify-between text-sm text-[#51483f]">
-          <p>&copy; 2024 Creative Portfolio</p>
-          <p class="mt-2 md:mt-0">Terms and Conditions | Privacy Policy</p>
-          <p class="mt-2 md:mt-0">Designed & Developed with ❤️</p>
+      </section>
+
+      <!--footer-->
+
+      <footer class="bg-[#cec3b8] py-20">
+        <div class="max-w-8xl mx-auto px-6 md:px-10">
+          <h1
+            class="text-5xl md:text-8xl font-semibold text-[#51483f] leading-tight footer"
+          >
+            Transforming <br />
+            Into Digital Reality
+          </h1>
+
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mt-20 gap-12"
+          >
+            <!-- Logo section -->
+            <div class="mb-8 md:mb-0">
+              <div
+                class="border border-[#51483f] rounded-full p-4 bg-white bg-opacity-10 shadow-lg hover:shadow-xl transition-all"
+              >
+                <img src="./logo.webp" alt="Logo" class="max-h-28" />
+              </div>
+            </div>
+
+            <!-- First link column -->
+            <div class="space-y-4">
+              <h3
+                class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2"
+              >
+                Navigation
+              </h3>
+              <a
+                href="#home"
+                class="text-md block font-medium hover:text-black transition"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-md block font-medium hover:text-black transition"
+                >About</a
+              >
+              <a
+                href="#projects"
+                class="text-md block font-medium hover:text-black transition"
+                >Projects</a
+              >
+              <a
+                href="#services"
+                class="text-md block font-medium hover:text-black transition"
+                >Services</a
+              >
+              <a
+                href="#contact"
+                class="text-md block font-medium hover:text-black transition"
+                >Contact</a
+              >
+            </div>
+
+            <!-- Second link column -->
+            <div class="space-y-4">
+              <h3
+                class="text-lg font-semibold text-[#51483f] mb-6 border-b pb-2"
+              >
+                Connect
+              </h3>
+              <a
+                href="https://www.linkedin.com/in/abhishek-panwar-30403220b/"
+                class="text-md block font-medium hover:text-black transition"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/abhishek2001panwar"
+                class="text-md block font-medium hover:text-black transition"
+                >GitHub</a
+              >
+            </div>
+
+            <!-- Newsletter section -->
+            <div class="md:col-span-2 lg:col-span-3 mt-10 md:mt-0">
+              <div
+                class="bg-white bg-opacity-20 rounded-2xl p-6 shadow-lg border border-white border-opacity-20"
+              >
+                <h5 class="text-lg font-semibold text-[#51483f] mb-4">
+                  Connect Us
+                </h5>
+                <p class="text-sm text-[#51483f] mb-4">
+                  Have a question? Drop us a message and we'll get back to you.
+                </p>
+                <form class="space-y-3">
+                  <div class="relative">
+                    <input
+                      type="email"
+                      class="bg-white bg-opacity-70 text-gray-800 w-full py-3 px-5 rounded-md focus:outline-none focus:ring-1 focus:ring-[#51483f] transition-all"
+                      placeholder="Your email address"
+                      required
+                    />
+                  </div>
+                  <div class="relative">
+                    <textarea
+                      class="bg-white bg-opacity-70 text-gray-800 w-full py-3 px-5 rounded-md focus:outline-none focus:ring-1 focus:ring-[#51483f] transition-all"
+                      placeholder="Your message"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full py-3 px-6 bg-[#51483f] hover:bg-black text-white rounded-md transition-all focus:outline-none flex items-center justify-center"
+                  >
+                    Send Message
+                    <i class="ri-send-plane-line ml-2"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer bottom -->
+          <div
+            class="mt-16 pt-6 border-t border-[#a99e92] flex flex-col md:flex-row items-center justify-between text-sm text-[#51483f]"
+          >
+            <p>&copy; 2024 Creative Portfolio</p>
+            <p class="mt-2 md:mt-0">Terms and Conditions | Privacy Policy</p>
+            <p class="mt-2 md:mt-0">Designed & Developed with ❤️</p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
@@ -932,6 +1322,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+  
     <script src="./script.js"></script>
   </body>
 </html>
